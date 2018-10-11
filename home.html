@@ -1,0 +1,617 @@
+<!doctype>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>TechBook</title>
+    <link rel="stylesheet" href="bootstrap%203/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="navbar-header">
+                <h1 class="logo">TechBook</h1>
+            </div>
+            <div class="category-nav row">
+                <div class="category col-md-7 col-xs-8 col-md-offset-1">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Technical <span class="caret"></span></a></li>
+                        <li><a href="#">Design <span class="caret"></span></a></li>
+                        <li><a href="#">English <span class="caret"></span></a></li>
+                        <li><a href="#">Business <span class="caret"></span></a></li>
+                    </ul>
+                </div>
+                <div class="login-area col-md-4 col-xs-4">
+                    <div class="login">
+                        <a href="#" class="button-hover-effect" onclick="showPopup(0)">
+                            <span class="glyphicon glyphicon-log-in"></span>
+                            LOGIN
+                        </a>
+                    </div>
+                    <div class="register">
+                        <a href="#" class="button-hover-effect" onclick="showPopup(1)">
+                            <span class="glyphicon glyphicon-user"></span>
+                            REGISTER
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container body-content">
+
+            <div class="search-area">
+                <div class="total-books">
+                    <p>There are 100 books on the library </p>
+                </div>
+                <div class="search-bar">
+                    <input type="text" name="search" placeholder="Search...">
+                    </input>
+                    <button type="submit" value="Search">Search</button>
+                </div>
+            </div>
+            <!--end search area-->
+            <div class="clear-fix"></div>
+            <div class="bookshelves">
+                <!--start a list book-->
+                <div class="category-books">
+                    <div class="category-title">
+                        <h4 class="pull-left">LAST BOOKS ADDED</h4>
+                        <p class="pull-right">
+                            <a href="#">See All &gt</a>
+                        </p>
+                    </div>
+                    <div class="clear-fix"></div>
+                    <div class="list-books">
+                        <div class="row">
+                            <!----------------------
+                            one book
+                            ------------------------->
+                            <div class="book col-md-2 col-xs-4">
+                                <div class="book-cover">
+                                    <a href="#">
+                                        <img src="img/Technical/FrontEnd/CssCookBook.jpg" alt="Css Cook Book">
+                                    </a>
+                                </div>
+                                <div class="book-name-and-ranking">
+                                    <div class="book-name">
+                                        <a href="#">Css CookBook</a>
+                                    </div>
+                                    <div class="book-ranking">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!----------------------
+                            one book
+                            ------------------------->
+                            <div class="book col-md-2 col-xs-4">
+                                <div class="book-cover">
+                                    <a href="#">
+                                        <img src="img/Technical/FrontEnd/BeginningHtml5AndCss3.jpg" alt="Css Cook Book">
+                                    </a>
+                                </div>
+                                <div class="book-name-and-ranking">
+                                    <div class="book-name">
+                                        <a href="#">Beginning HTML5 And Css3</a>
+                                    </div>
+                                    <div class="book-ranking">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!----------------------
+                            one book
+                            ------------------------->
+                            <div class="book col-md-2 col-xs-4">
+                                <div class="book-cover">
+                                    <a href="#">
+                                        <img src="img/Technical/Python/LearningPython.jpg" alt="Css Cook Book">
+                                    </a>
+                                </div>
+                                <div class="book-name-and-ranking">
+                                    <div class="book-name">
+                                        <a href="#">Learning Python</a>
+                                    </div>
+                                    <div class="book-ranking">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                                                   <!----------------------
+                            one book
+                            ------------------------->
+                            <div class="book col-md-2 col-xs-4">
+                                <div class="book-cover">
+                                    <a href="#">
+                                        <img src="img/Technical/Python/LearningPython.jpg" alt="Css Cook Book">
+                                    </a>
+                                </div>
+                                <div class="book-name-and-ranking">
+                                    <div class="book-name">
+                                        <a href="#">Learning Python</a>
+                                    </div>
+                                    <div class="book-ranking">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!----------------------
+                            one book
+                            ------------------------->
+                            <div class="book col-md-2 col-xs-4">
+                                <div class="book-cover">
+                                    <a href="#">
+                                        <img src="img/Technical/Python/LearningPython.jpg" alt="Css Cook Book">
+                                    </a>
+                                </div>
+                                <div class="book-name-and-ranking">
+                                    <div class="book-name">
+                                        <a href="#">Learning Python</a>
+                                    </div>
+                                    <div class="book-ranking">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!----------------------
+                            one book
+                            ------------------------->
+                            <div class="book col-md-2 col-xs-4">
+                                <div class="book-cover">
+                                    <a href="#">
+                                        <img src="img/Technical/Python/LearningPython.jpg" alt="Css Cook Book">
+                                    </a>
+                                </div>
+                                <div class="book-name-and-ranking">
+                                    <div class="book-name">
+                                        <a href="#">Learning Python</a>
+                                    </div>
+                                    <div class="book-ranking">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="clear-fix"></div>
+                    </div>
+                </div>
+                <!------------------------
+                            start a list book
+                 ------------------------------------->
+                <div class="category-books">
+                    <div class="category-title">
+                        <h4 class="pull-left">MOST READ BOOKS</h4>
+                        <p class="pull-right">
+                            <a href="#">See All &gt</a>
+                        </p>
+                    </div>
+                    <div class="clear-fix"></div>
+                    <div class="list-books">
+                        <div class="row">
+                            <!----------------------
+                            one book
+                            ------------------------->
+                            <div class="book col-md-2 col-xs-4">
+                                <div class="book-cover">
+                                    <a href="#">
+                                        <img src="img/Technical/FrontEnd/CssCookBook.jpg" alt="Css Cook Book">
+                                    </a>
+                                </div>
+                                <div class="book-name-and-ranking">
+                                    <div class="book-name">
+                                        <a href="#">Css CookBook</a>
+                                    </div>
+                                    <div class="book-ranking">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!----------------------
+                            one book
+                            ------------------------->
+                            <div class="book col-md-2 col-xs-4">
+                                <div class="book-cover">
+                                    <a href="#">
+                                        <img src="img/Technical/FrontEnd/BeginningHtml5AndCss3.jpg" alt="Css Cook Book">
+                                    </a>
+                                </div>
+                                <div class="book-name-and-ranking">
+                                    <div class="book-name">
+                                        <a href="#">Beginning HTML5 And Css3</a>
+                                    </div>
+                                    <div class="book-ranking">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!----------------------
+                            one book
+                            ------------------------->
+                            <div class="book col-md-2 col-xs-4">
+                                <div class="book-cover">
+                                    <a href="#">
+                                        <img src="img/Technical/Python/LearningPython.jpg" alt="Css Cook Book">
+                                    </a>
+                                </div>
+                                <div class="book-name-and-ranking">
+                                    <div class="book-name">
+                                        <a href="#">Learning Python</a>
+                                    </div>
+                                    <div class="book-ranking">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!----------------------
+     one book
+     ------------------------->
+                            <div class="book col-md-2 col-xs-4">
+                                <div class="book-cover">
+                                    <a href="#">
+                                        <img src="img/Technical/Python/LearningPython.jpg" alt="Css Cook Book">
+                                    </a>
+                                </div>
+                                <div class="book-name-and-ranking">
+                                    <div class="book-name">
+                                        <a href="#">Learning Python</a>
+                                    </div>
+                                    <div class="book-ranking">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!----------------------
+                            one book
+                            ------------------------->
+                            <div class="book col-md-2 col-xs-4">
+                                <div class="book-cover">
+                                    <a href="#">
+                                        <img src="img/Technical/Python/LearningPython.jpg" alt="Css Cook Book">
+                                    </a>
+                                </div>
+                                <div class="book-name-and-ranking">
+                                    <div class="book-name">
+                                        <a href="#">Learning Python</a>
+                                    </div>
+                                    <div class="book-ranking">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!----------------------
+                            one book
+                            ------------------------->
+                            <div class="book col-md-2 col-xs-4">
+                                <div class="book-cover">
+                                    <a href="#">
+                                        <img src="img/Technical/Python/LearningPython.jpg" alt="Css Cook Book">
+                                    </a>
+                                </div>
+                                <div class="book-name-and-ranking">
+                                    <div class="book-name">
+                                        <a href="#">Learning Python</a>
+                                    </div>
+                                    <div class="book-ranking">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="clear-fix"></div>
+                    </div>
+                </div>
+                <!------------------------
+                           start a list book
+                ------------------------------------->
+                <div class="category-books">
+                    <div class="category-title">
+                        <h4 class="pull-left">RECOMMEND FOR BEGINER</h4>
+                        <p class="pull-right">
+                            <a href="#">See All &gt</a>
+                        </p>
+                    </div>
+                    <div class="clear-fix"></div>
+                    <div class="list-books">
+                        <div class="row">
+                            <!----------------------
+                            one book
+                            ------------------------->
+                            <div class="book col-md-2 col-xs-4">
+                                <div class="book-cover">
+                                    <a href="#">
+                                        <img src="img/Technical/FrontEnd/CssCookBook.jpg" alt="Css Cook Book">
+                                    </a>
+                                </div>
+                                <div class="book-name-and-ranking">
+                                    <div class="book-name">
+                                        <a href="#">Css CookBook</a>
+                                    </div>
+                                    <div class="book-ranking">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!----------------------
+                            one book
+                            ------------------------->
+                            <div class="book col-md-2 col-xs-4">
+                                <div class="book-cover">
+                                    <a href="#">
+                                        <img src="img/Technical/FrontEnd/BeginningHtml5AndCss3.jpg" alt="Css Cook Book">
+                                    </a>
+                                </div>
+                                <div class="book-name-and-ranking">
+                                    <div class="book-name">
+                                        <a href="#">Beginning HTML5 And Css3</a>
+                                    </div>
+                                    <div class="book-ranking">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!----------------------
+                            one book
+                            ------------------------->
+                            <div class="book col-md-2 col-xs-4">
+                                <div class="book-cover">
+                                    <a href="#">
+                                        <img src="img/Technical/Python/LearningPython.jpg" alt="Css Cook Book">
+                                    </a>
+                                </div>
+                                <div class="book-name-and-ranking">
+                                    <div class="book-name">
+                                        <a href="#">Learning Python</a>
+                                    </div>
+                                    <div class="book-ranking">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!----------------------
+     one book
+     ------------------------->
+                            <div class="book col-md-2 col-xs-4">
+                                <div class="book-cover">
+                                    <a href="#">
+                                        <img src="img/Technical/Python/LearningPython.jpg" alt="Css Cook Book">
+                                    </a>
+                                </div>
+                                <div class="book-name-and-ranking">
+                                    <div class="book-name">
+                                        <a href="#">Learning Python</a>
+                                    </div>
+                                    <div class="book-ranking">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!----------------------
+                            one book
+                            ------------------------->
+                            <div class="book col-md-2 col-xs-4">
+                                <div class="book-cover">
+                                    <a href="#">
+                                        <img src="img/Technical/Python/LearningPython.jpg" alt="Css Cook Book">
+                                    </a>
+                                </div>
+                                <div class="book-name-and-ranking">
+                                    <div class="book-name">
+                                        <a href="#">Learning Python</a>
+                                    </div>
+                                    <div class="book-ranking">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!----------------------
+                            one book
+                            ------------------------->
+                            <div class="book col-md-2 col-xs-4">
+                                <div class="book-cover">
+                                    <a href="#">
+                                        <img src="img/Technical/Python/LearningPython.jpg" alt="Css Cook Book">
+                                    </a>
+                                </div>
+                                <div class="book-name-and-ranking">
+                                    <div class="book-name">
+                                        <a href="#">Learning Python</a>
+                                    </div>
+                                    <div class="book-ranking">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="clear-fix"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer>
+            <p> &copy; Copyright by Franklin Nguyen</p>
+            <span class="caret"></span>
+        </footer>
+        <ul class="nav nav-tabs">
+          <li role="presentation" class="active"><a href="#">Home</a></li>
+          <li role="presentation"><a href="#">Profile</a></li>
+          <li role="presentation"><a href="#">Messages</a></li>
+        </ul>
+        <div class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    </div>
+    <div class="pop-up full-page">
+            <!--<div class="pop-up-background" onclick="closePopup(0)"></div>-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="signin-signup-form">
+                            <p class="pull-right close-pop-up" onclick="closePopup(0)">X</p>
+                            <div class="form-title">
+                                <h4>Login to your account</h4>
+                            </div>
+                            <form  class="siginform" method="post">
+                                <div class="form-text">
+                                    <input type="text" name="userName" placeholder="Username" required>
+                                </div>
+                                <div class="form-text">
+                                    <input type="password" name="password" placeholder="Password" required>
+                                </div>
+                                <div class="form-button">
+                                    <input type="submit" id="submit1" value="Login">
+                                </div>
+                                <div class="form-button fb-button">
+                                    <input type="submit" id="submit2" value="Login with Facebook">
+                                </div>
+                                <div class="form-button ggp-button">
+                                    <input type="submit" id="submit" value="Login with Google+">
+                                </div>
+
+                                <div class="links-holder">
+                                    <a href="#" onclick="creatANewAcount()">Create new account</a>or
+                                    <a href="#">Back to Hompage</a></div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    <div class="pop-up full-page register-form">
+            <!--<div class="pop-up-background" onclick="closePopup(1)"></div>-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="signin-signup-form">
+                            <p class="pull-right close-pop-up" onclick="closePopup(1)">X</p>
+                            <div class="form-title">
+                                <h4>Sign up</h4>
+                            </div>
+                            <form  class="siginform">
+                                <div class="form-text">
+                                    <input type="text" name="userName" placeholder="Username" required>
+                                </div>
+                                <div class="form-text">
+                                    <input type="email" name="email" placeholder="Email" required>
+                                </div>
+                                <div class="form-text">
+                                    <input type="password" name="password" placeholder="Password" required>
+                                </div>
+                                <div class="form-text">
+                                    <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+                                </div>
+                                <div class="form-button">
+                                    <input type="submit" id="submit3" value="Sign Up">
+                                </div>
+                                <p class="chose-method-login">You Can Login Via:</p>
+                                <div class="form-button fb-button">
+                                    <input type="submit" id="submit4" value="Login with Facebook">
+                                </div>
+                                <div class="form-button ggp-button">
+                                    <input type="submit" id="submit5" value="Login with Google+">
+                                </div>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    <script type="text/javascript" src="js/pop-up.js"></script>
+</body>
+</head>
+</html>

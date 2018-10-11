@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary App Input Data</title>
+    <style>
+        button{
+            margin-top: 15px;
+        }
+        input{
+            width: 280px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <form action="" id="inputDictionary">
+            <input type="text" id="inputEngWord" placeholder="Input English Words">
+            <input type="text" id="inputVnWord" placeholder="Input VietNam Words">
+            <button id="addArray" type="reset" onclick="addDictionary()">Add to Dictionary</button>
+        </form>
+        <div class="searchEng">
+            <input type="text" id="searchEngword" placeholder="search Eng word">
+            <button id="searchArray" onclick="searchDictionary()">Search</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script language="JavaScript">
+
+        var listEngWords=[], listVNWords=[];
+        var engId = document.getElementById("inputEngWord");
+        var vnId  = document.getElementById("inputVnWord");
+        var searchId = document.getElementById("searchEngword");
+        function addDictionary() {
+            if(engId.value != null)
+                listEngWords.push(engId.value);
+            else
+                listEngWords.push("null");
+            if(vnId.value != null)
+                listVNWords.push(vnId.value);
+            else
+                listVNWords.push("null");
+        }
+        function searchDictionary() {
+            for(var i =0; i<listEngWords.length; i++){
+                if(searchId.value == listEngWords[i])
+                    break;
+            }
+            alert(listVNWords[i]);
+
+        }
+    </script>
+</body>
+</html>

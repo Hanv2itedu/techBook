@@ -1,0 +1,414 @@
+@charset "UTF-8";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    transition: all 0.3s ease 0.0s;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+.wrapper{
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.pop-up{
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    display: none;
+    position: fixed;
+    left: 0;
+    top:0;
+}
+/*.pop-up .pop-up-background{*/
+    /*position: absolute;*/
+    /*top:0;*/
+    /*left: 0;*/
+    /*z-index: 98;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*opacity: 0;*/
+/*}*/
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    text-decoration: none;
+}
+.clear-fix{
+    clear: both;
+}
+/*------------------------------------------------------------------------
+1 login pop-up Style
+-------------------------------------------------------------------------*/
+.full-page{
+    background: rgba(0,0,0, 0.5);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    z-index: 99;
+}
+.full-page .signin-signup-form .form-title{
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 0.5em;
+    display: block;
+}
+.full-page .signin-signup-form .close-pop-up{
+    width: 25px;
+    height: 25px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0.1em;
+    /*border: 1px solid #000000;*/
+    border-radius: 50%;
+    box-shadow: 0 0 5px;
+}
+.signin-signup-form .close-pop-up:hover{
+    color: #000;
+    text-shadow: 0 0 3px #aaa;
+    background-color: #fff;
+
+}
+.full-page .signin-signup-form{
+    width: 100%;
+    max-width: 336px;
+    display: inline-block;
+    background-color: #555;
+    padding: 1.8em;
+    border-radius: 15px 15px;
+    box-shadow: 0 0 14px #000,0 0 14px #000;
+}
+.full-page ::-webkit-input-placeholder {
+    color: #f5faff;
+}
+.full-page ::-moz-placeholder {
+    color: #f5faff;
+}
+.full-page :-ms-input-placeholder {
+    color: #f5faff;
+}
+.full-page .signin-signup-form .form-text{
+    margin-bottom: 10px;
+}
+.full-page .signin-signup-form .form-text input{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    /*    text-align: left;*/
+    font-family: 'Montserrat-bold', sans-serif;
+    text-align: center;
+    background-color: transparent;
+    border:1px solid #ffffff;
+    font-size: 15px;
+    color: #ffffff;
+    opacity: 0.65;
+    outline: none;
+}
+.full-page .signin-signup-form .form-text input:hover,
+.full-page .signin-signup-form .form-text input:focus{
+    opacity: 1;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.chose-method-login{
+    text-align: center;
+    color: #fff;
+    padding: 0.5em;
+    font-size: 16px;
+    margin: 0;
+}
+.full-page .signin-signup-form .form-button{
+    width: 100%;
+    padding-top: 10px;
+}
+.full-page .signin-signup-form .ggp-button{
+    margin-bottom: 15px;
+}
+.register-form .fb-button{
+    padding-top: 0;
+    margin-top: 0;
+}
+.full-page .signin-signup-form .form-button input{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    /*    text-align: left;*/
+    font-family: 'Montserrat-bold', sans-serif;
+    text-align: center;
+    background-color: #ecf8ff;
+    border:1px solid #ecf8ff;
+    font-size: 15px;
+    color: #1f8ded;
+    /*    opacity: 0.95;*/
+    outline: none;
+}
+.full-page .signin-signup-form .fb-button input{
+    background-color: #1A46D6;
+    color: #fff;
+}
+.full-page .signin-signup-form .ggp-button input{
+    background-color: #CD2F22;
+    color: #fff;
+}
+.full-page .signin-signup-form .form-button input:hover{
+    /*    opacity: 1;*/
+    background-color: #fff;
+
+}
+.full-page .signin-signup-form .fb-button input:hover{
+    color: #1A46D6;
+    border-color: #1A46D6;
+}
+.full-page .signin-signup-form .ggp-button input:hover{
+    color: #CD2F22;
+    border-color: #CD2F22
+}
+.full-page .signin-signup-form .links-holder{
+    color: blue;
+}
+.full-page .signin-signup-form .links-holder a{
+    color: #fff;
+    padding: 2px 5px;
+}
+.full-page .signin-signup-form .links-holder a:hover,
+.full-page .signin-signup-form .links-holder a:focus{
+    text-decoration: none;
+    color: #BBDDFA;
+}
+/*-----------------------------------------------------------------------
+2- Style header
+-------------------------------------------------------------------------*/
+header{
+    width: 100%;
+}
+.navbar-header{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+.navbar-header h1{
+    font-size: 22px;
+    /*padding: 0.5em;*/
+}
+.category-nav{
+    width: 100%;
+    /*background-color: #aaa;*/
+
+}
+.category-nav .category ul{
+    display: block;
+    line-height: 50px;
+    box-sizing: content-box;
+}
+.category-nav .category ul li{
+    display: inline;
+    padding: 0.9em 0.5em;
+    /*border: 1px solid #000;*/
+}
+.category-nav .category ul li a{
+    padding: 0.9em 0.5em;
+    font-family: 'BebasNeue Regular';
+    font-size: 17px;
+    color: #313943;;
+    font-weight: 600;
+}
+.category-nav .category ul li:hover{
+    border-bottom: 2px solid #C59E47;
+}
+.login-area{
+    display: block;
+    line-height: 50px;
+    box-sizing: border-box;
+    /*border: 1px solid #000;*/
+}
+.login-area .login,
+.login-area .register{
+    display: inline;
+    /*padding: 0.5em 0.5em;*/
+    font-weight: 600;
+    /*border: 1px solid #000;*/
+}
+.login-area .login{
+    margin-left: 30%;
+    border-right: 1px solid #000;
+}
+.login-area .login a,
+.login-area .register a{
+    font-family: 'BebasNeue Regular';
+    font-size: 14px;
+    padding: 0.5em 0.5em;
+}
+.login-area .login:hover,
+.login-area .register:hover{
+    color: #000;
+}
+.button-hover-effect{
+    position: relative;
+    transition:800ms ease all;
+    outline:none;
+}
+
+.button-hover-effect:after{
+    content:'';
+    position:absolute;
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+    height:2px;
+    width:0;
+    background: #C59E47;
+    transition:400ms ease all;
+}
+
+
+.button-hover-effect:hover:after{
+    width:100%;
+    transition:800ms ease all;
+}
+/*---------------------------------------------------------------------
+3- style search area
+---------------------------------------------------------------------*/
+.search-area{
+    display: block;
+    /*line-height: 40px;*/
+}
+.search-area .total-books{
+    float: left;
+    margin-right: 2em;
+    padding-top: 0.5em;
+}
+.search-area .search-bar{
+    /*line-height: 40px;*/
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+.search-area .search-bar input{
+    width: 40%;
+    height: 30px;
+    border: 1px solid #aaa;
+    border-radius: 15px 15px;
+    outline: none;
+    padding: 4px 14px;
+    margin-bottom: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1;
+}
+.search-area .search-bar button{
+    height: 30px;
+    width: 70px;
+    border: 1px solid #aaa;
+    border-radius: 15px 15px;
+    font-weight: 600;
+    outline: none;
+}
+.search-area .search-bar button:hover{
+    background-color: #555;
+    border: 1px solid #000;
+    color: #fff;
+    transition:800ms ease all;
+}
+/*----------------------------------------------------
+4- bookshelves style
+------------------------------------------------------*/
+.bookshelves{
+    width: 100%;
+    margin-top: 2em;
+}
+.bookshelves .category-books{
+
+}
+.bookshelves .category-books .category-title{
+    line-height: 3em;
+}
+.bookshelves .category-books .category-title h4{
+    font-family: 'BebasNeue Regular';
+    font-weight: 600;
+}
+.bookshelves .category-books .category-title p{
+    padding: 0.1em 0.7em;
+}
+.list-books .book{
+    /*width: 100%;*/
+    height: 262px;
+    padding: 0.5em 1em;
+    box-sizing: border-box;
+}
+.list-books .book:hover{
+    box-shadow: 0 0 3px #aaa, 0 0 3px #aaa;
+}
+.list-books .book .book-cover{
+    width: 100%;
+    box-sizing: border-box;
+}
+.list-books .book .book-cover a{
+    width: 100%;
+    margin: 0 auto;
+}
+.list-books .book .book-cover a img{
+    width: 86%;
+    height: 75%;
+    margin: 0 7%;
+    box-shadow: 2px 2px 3px #aaa;
+    border-radius: 2px 2px;
+
+}
+.list-books .book .book-name-and-ranking{
+    width: 100%;
+    height: 25%;
+    padding: 0.5em 0;
+}
+.list-books .book .book-name-and-ranking .book-name{
+    text-align: center;
+    margin-top: 0.2em;
+}
+.list-books .book .book-name-and-ranking .book-ranking{
+    text-align: center;
+    color: gold;
+}
+@media only screen and (max-width: 500px) {
+    .list-books .book {
+        height: 210px;
+    }
+}
+/*-----------------------------------------------------
+                    5 style Footer
+-----------------------------------------------------*/
+footer{
+    width: 100%;
+    margin-top: 3em;
+    line-height: 60px;
+    clear: both;
+    background-color: #000;
+}
+footer p{
+    color: #fff;
+    margin: 0;
+    text-align: center;
+}
